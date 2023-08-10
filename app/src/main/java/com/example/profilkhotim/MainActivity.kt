@@ -1,5 +1,6 @@
 package com.example.profilkhotim
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -17,23 +18,28 @@ class MainActivity : AppCompatActivity() {
         val bntHobby: CardView = findViewById(R.id.hobby)
 
         bntProfile.setOnClickListener {
-            Toast.makeText(this, "Ini Tombol Profile", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
         }
 
         bntEducation.setOnClickListener {
-            Toast.makeText(this, "Ini Tombol Education", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SekolahActivity::class.java)
+            startActivity(intent)
         }
 
         bntSkill.setOnClickListener {
-            Toast.makeText(this, "Ini Tombol Skill", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SkillActivity::class.java)
+            startActivity(intent)
         }
 
         bntportofolio.setOnClickListener {
-            Toast.makeText(this, "Ini Tombol Portofolio", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ProjectActivity::class.java)
+            startActivity(intent)
         }
 
         bntHobby.setOnClickListener {
-            Toast.makeText(this, "Ini Tombol Hobby", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, HobbyActivity::class.java)
+            startActivity(intent)
         }
     }
 }
